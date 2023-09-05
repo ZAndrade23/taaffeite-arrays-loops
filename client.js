@@ -90,6 +90,8 @@ if(currentTotal >= fundraisingGoal){
     goalReached = true;
 }
 console.log('goalReached', goalReached);
+
+
 // display on the webpage whether goal has been reached
 let outputDiv = document.querySelector('#output');
 if(goalReached) {
@@ -98,3 +100,56 @@ outputDiv.innerHTML = 'Goal Reached';
     outputDiv.innerHTML = 'goal not yet reached. remaining amount: ' 
     + (fundraisingGoal - currentTotal);
 }
+
+
+let bagel = ['bacon', 'lettuce', 'tomato'];
+
+//while loop
+//while(condition) {
+ //   code to run while condition is true
+//}
+let index = 0;
+const max = 10;
+    while(index < max ){
+        console.log('in while loop. index', index);
+   index++;
+ }
+ console.log('index after while loop', index );
+
+
+
+ //for loop
+ //for(let i = 0; i<max; i++ ) {
+  //  console.log('in for loop.', i);
+// }
+ //console.log('after the for loop', i);
+//end for
+
+ let hand = ['q','3','j','9','6','k','a'];
+ 
+ for(let i = 0; i < hand.length; i++) {
+    console.log('for loop', hand [ i ]);
+ 
+ if(hand [i] === '9') {
+    console.log('match');
+ }//end match
+}//end for
+
+
+//for in
+for( i in hand){
+    console.log('for in loop', hand[i]);
+    if(hand[i]=== '9'){
+        console.log("match!!");
+    }//end match
+}//end for in
+
+
+
+//for of loop
+for(card of hand){
+    console.log('for of loop', card);
+    if(card === '9'){
+        console.log('match!!!');
+    }//end match
+}//end for of
